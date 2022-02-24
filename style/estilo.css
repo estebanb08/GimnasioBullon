@@ -18,26 +18,15 @@ html body{
     }   
 
 
-    header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
-    nav ul {
-        list-style: none;
-        display: flex;
-    }
-    
-    nav ul li{
-        padding: 2%;
-    }
-    
-    nav img{
+.navbar{
+    width: 100%;
+    margin-bottom: 5%;
+}
 
-        width: 15%;
-    }
-    
+.navbar img{
+    width: 10%;
 
+}
 
 
 
@@ -437,7 +426,7 @@ width: 90%;
     }
 
 
-    nav{
+    .navbar{
         grid-area: header;
     }
 
@@ -516,9 +505,8 @@ width: 90%;
         align-items: center; 
     }
 
-    header{
+    .navbar{
         grid-area: header;
-
     }
 
     #grillaMainE{
@@ -605,8 +593,9 @@ width: 90%;
     }
 
 
-    header{
+    .navbar{
         grid-area: header;
+
     }
 
     footer{
@@ -658,7 +647,7 @@ width: 90%;
         align-items: center;
     }
 
-    header{
+    .navbar{
         grid-area: header;
     }
 
@@ -732,7 +721,7 @@ width: 90%;
 
 
 
-    header{
+    .navbar{
         grid-area: header;
     }
   
@@ -822,10 +811,9 @@ width: 90%;
         align-items: center; 
     }
 
-    header{
+    .navbar{
         grid-area: header;
-
-        }
+    }
 
 
     #grillaMain{
@@ -908,7 +896,7 @@ width: 90%;
         align-items: center;
     }
 
-    header{
+    .navbar{
         grid-area: header;
     }
 
@@ -977,10 +965,9 @@ width: 90%;
  }
 
 
- header{
-     grid-area: header;
-
- }
+ .navbar{
+    grid-area: header;
+}
 
 
  #grillaMainF{
@@ -1075,9 +1062,9 @@ width: 90%;
  }
 
 
- header{
-     grid-area: header;
- }
+ .navbar{
+    grid-area: header;
+}
 
 
  footer{
@@ -1102,17 +1089,18 @@ width: 90%;
 .quienesSomos{
     background-color: rgba(245, 245, 220, 0.432);
     grid-area: texto;
-    height: 120%;
-    width: 80%;
+    height: 140%;
+    width: 90%;
     font-size: 3vw;
     position: relative;
-    bottom: 80%;
-    left: 10%;
+    bottom: 90%;
+    left: 5%;
 }
 
 .quienesSomos p{
+    margin: 2%;
     position: relative;
-    bottom:30%;
+    bottom:40%;
     text-align: justify;
 }
 
@@ -1124,15 +1112,18 @@ width: 90%;
 
  .subInformacion{
      background-color: #584edd;
-     height: 35%;
+     height: 40%;
      grid-area: subInformacion;
      position: relative;
-     bottom: 230%;
+     bottom: 100%;
      left: 25%;
  }
 
-
+.subInformacion h2{
+    font-size: 5vw;
+}
  .subInformacion p{
+     font-size: 2vw;
      text-align: left;
      text-align: justify;
 
