@@ -121,6 +121,31 @@ video {
   .formulario svg {
     width: 70%; }
 
+#grillaMainE h2 {
+  width: 50%;
+  font-size: 2vw;
+  text-align: center; }
+
+#grillaMainE .e1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+#grillaMainE .e2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+#grillaMainE .e3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+#grillaMainE .e4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
 .formulario1 {
   border-radius: 20px;
   background-image: linear-gradient(to right, #4e20b8, #4d4dc4, #7a1c7a);
@@ -159,6 +184,89 @@ video {
     .formulario1 input[type="button"]:hover {
       transform: scale(1.05, 1.05);
       color: white; }
+
+.cambio1 {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #161069;
+  height: 80%;
+  width: 90%; }
+  .cambio1 img {
+    margin-top: 15%;
+    width: 80%; }
+  .cambio1 h3 {
+    font-size: 2vw;
+    margin-bottom: 5%; }
+    .cambio1 h3 p {
+      font-size: 1.3vw; }
+
+.cambio2 {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #161069;
+  height: 80%;
+  width: 90%; }
+  .cambio2 img {
+    margin-top: 15%;
+    width: 80%; }
+  .cambio2 h3 {
+    font-size: 2vw;
+    margin-bottom: 5%; }
+    .cambio2 h3 p {
+      font-size: 1.3vw; }
+
+.cambio3 {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #161069;
+  height: 80%;
+  width: 90%; }
+  .cambio3 img {
+    margin-top: 15%;
+    width: 80%; }
+  .cambio3 h3 {
+    font-size: 2vw;
+    margin-bottom: 5%; }
+    .cambio3 h3 p {
+      font-size: 1.3vw; }
+
+.cambio4 {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #161069;
+  height: 80%;
+  width: 90%; }
+  .cambio4 img {
+    margin-top: 15%;
+    width: 80%; }
+  .cambio4 h3 {
+    font-size: 2vw;
+    margin-bottom: 5%; }
+    .cambio4 h3 p {
+      font-size: 1.3vw; }
+
+.quienesSomos {
+  font-size: 1.2vw;
+  background-color: #3a50cc; }
+  .quienesSomos h1 {
+    height: 50%; }
+
+.subInformacion {
+  height: 50%;
+  width: 50%;
+  font-size: 1.5vw; }
 
 @media only screen and (min-width: 600px) {
   #grillaIndex {
@@ -227,15 +335,144 @@ video {
       #grillaFormulario #grillaMainF .formulario1 {
         grid-area: form;
         position: relative;
-        bottom: 10%; } }
+        bottom: 10%; }
+  #grillaEntrenamiento {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 1fr 1fr 50%;
+    grid-template-areas: "header header" "main main" "main main" "footer footer";
+    justify-items: center;
+    align-items: center; }
+    #grillaEntrenamiento .navbar {
+      grid-area: header; }
+    #grillaEntrenamiento footer {
+      margin-top: 8%;
+      grid-area: footer; }
+    #grillaEntrenamiento #grillaMainE {
+      margin-bottom: 10%;
+      width: 100%;
+      height: 700px;
+      grid-area: main;
+      display: grid;
+      row-gap: 10%;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-areas: "rutina1 rutina1 rutina2 rutina2" "rutina1 rutina1 rutina2 rutina2" "rutina3 rutina3 rutina4 rutina4" "rutina3 rutina3 rutina4 rutina4";
+      justify-items: center;
+      align-items: center;
+      text-align: center; }
+      #grillaEntrenamiento #grillaMainE .e1 {
+        grid-area: rutina1; }
+        #grillaEntrenamiento #grillaMainE .e1 iframe {
+          height: 20em;
+          width: 90%; }
+      #grillaEntrenamiento #grillaMainE .e2 {
+        grid-area: rutina2; }
+        #grillaEntrenamiento #grillaMainE .e2 iframe {
+          height: 20em;
+          width: 90%; }
+      #grillaEntrenamiento #grillaMainE .e3 {
+        grid-area: rutina3; }
+        #grillaEntrenamiento #grillaMainE .e3 iframe {
+          height: 20em;
+          width: 90%; }
+      #grillaEntrenamiento #grillaMainE .e4 {
+        grid-area: rutina4; }
+        #grillaEntrenamiento #grillaMainE .e4 iframe {
+          height: 20em;
+          width: 90%; }
+  #grillaClientes {
+    display: grid;
+    row-gap: 3%;
+    column-gap: 3%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-areas: "header header" "main main" "main main" "footer footer";
+    justify-items: center;
+    align-items: center; }
+    #grillaClientes .navbar {
+      grid-area: header; }
+    #grillaClientes footer {
+      grid-area: footer; }
+    #grillaClientes #grillaClientesM {
+      grid-area: main;
+      display: grid;
+      row-gap: 1%;
+      column-gap: 10%;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "cambio1 cambio2" "cambio3 cambio4";
+      margin: 10%; }
+      #grillaClientes #grillaClientesM .cambio1 {
+        grid-area: cambio1;
+        transition: all .1s; }
+        #grillaClientes #grillaClientesM .cambio1:hover {
+          transform: scale(1.05, 1.05); }
+      #grillaClientes #grillaClientesM .cambio2 {
+        grid-area: cambio2;
+        transition: all .1s; }
+        #grillaClientes #grillaClientesM .cambio2:hover {
+          transform: scale(1.05, 1.05); }
+      #grillaClientes #grillaClientesM .cambio3 {
+        grid-area: cambio3;
+        transition: all .1s; }
+        #grillaClientes #grillaClientesM .cambio3:hover {
+          transform: scale(1.05, 1.05); }
+      #grillaClientes #grillaClientesM .cambio4 {
+        grid-area: cambio4;
+        transition: all .1s; }
+        #grillaClientes #grillaClientesM .cambio4:hover {
+          transform: scale(1.05, 1.05); }
+  #grillaNosotrosN {
+    display: grid;
+    row-gap: 5%;
+    column-gap: 5%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 1fr 1fr 10%;
+    grid-template-areas: "header header" "main main" "main main" "footer footer";
+    align-items: center;
+    text-align: center; }
+    #grillaNosotrosN .navbar {
+      grid-area: header; }
+    #grillaNosotrosN footer {
+      grid-area: footer; }
+    #grillaNosotrosN #grillaMainN {
+      margin-left: 2%;
+      grid-area: main;
+      display: grid;
+      row-gap: 5%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "foto Parrafo" "cuadro cuadro";
+      text-align: center;
+      align-items: center; }
+      #grillaNosotrosN #grillaMainN .fondoNosotros {
+        width: 100%;
+        grid-area: foto; }
+      #grillaNosotrosN #grillaMainN .quienesSomos {
+        padding: 2%;
+        width: 90%;
+        height: 95%;
+        grid-area: Parrafo;
+        text-align: justify; }
+        #grillaNosotrosN #grillaMainN .quienesSomos h1 {
+          margin-bottom: 3%; }
+        #grillaNosotrosN #grillaMainN .quienesSomos p {
+          position: relative;
+          bottom: 40%; }
+      #grillaNosotrosN #grillaMainN .subInformacion {
+        grid-area: cuadro;
+        position: relative;
+        left: 25%;
+        text-align: justify; } }
 
 @media only screen and (max-width: 600px) {
   .formulario {
     position: fixed;
     height: 10%;
-    right: 5%; }
-    .formulario img {
-      width: 80%; }
+    right: 8%; }
+    .formulario svg {
+      width: 180%; }
   footer {
     font-size: 1.8vw; }
   #grillaIndex {
@@ -291,33 +528,147 @@ video {
     grid-template-areas: "header" "main" "main" "footer";
     justify-items: center;
     align-items: center; }
-  footer {
-    grid-area: footer; }
-  .navbar {
-    grid-area: header; }
-  #grillaMainF {
-    height: 50em;
-    grid-area: main;
+    #grillaFormulario footer {
+      grid-area: footer; }
+    #grillaFormulario .navbar {
+      grid-area: header; }
+    #grillaFormulario #grillaMainF {
+      height: 50em;
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "texto" "formulario";
+      justify-items: center;
+      justify-self: center;
+      align-items: center;
+      text-align: center; }
+      #grillaFormulario #grillaMainF .texto {
+        grid-area: texto;
+        position: relative; }
+      #grillaFormulario #grillaMainF .formulario1 {
+        grid-area: formulario;
+        height: 70%;
+        position: relative; }
+        #grillaFormulario #grillaMainF .formulario1 input[type="button"] {
+          font-size: 2vw;
+          height: 5em;
+          width: 60%;
+          position: relative;
+          top: 50%; }
+        #grillaFormulario #grillaMainF .formulario1 input {
+          height: 2em; }
+  #grillaEntrenamiento {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: "texto" "formulario";
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr 10%;
+    grid-template-areas: "header" "main" "main" "main" "main" "footer";
     justify-items: center;
     justify-self: center;
-    align-items: center;
-    text-align: center; }
-    #grillaMainF .texto {
-      grid-area: texto;
-      position: relative; }
-    #grillaMainF .formulario1 {
-      grid-area: formulario;
-      height: 70%;
-      position: relative; }
-      #grillaMainF .formulario1 input[type="button"] {
-        font-size: 2vw;
-        height: 5em;
-        width: 60%;
+    align-items: center; }
+    #grillaEntrenamiento .navbar {
+      grid-area: header; }
+    #grillaEntrenamiento footer {
+      grid-area: footer; }
+    #grillaEntrenamiento #grillaMainE {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "entrenamiento1" "entrenamiento2" "entrenamiento3" "entrenamiento4";
+      justify-items: center;
+      align-items: center;
+      margin: 0 2% 0 2%; }
+      #grillaEntrenamiento #grillaMainE .e1 {
+        grid-area: entrenamiento1;
+        margin: 5%; }
+      #grillaEntrenamiento #grillaMainE .e2 {
+        grid-area: entrenamiento2;
+        margin: 5%; }
+      #grillaEntrenamiento #grillaMainE .e3 {
+        grid-area: entrenamiento3;
+        margin: 5%; }
+      #grillaEntrenamiento #grillaMainE .e4 {
+        grid-area: entrenamiento4;
+        margin: 5%; }
+  #grillaClientes {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header" "main" "main" "main" "main" "footer"; }
+    #grillaClientes .navbar {
+      grid-area: header; }
+    #grillaClientes footer {
+      grid-area: footer; }
+    #grillaClientes #grillaClientesM {
+      height: 235em;
+      grid-area: main;
+      display: grid;
+      row-gap: 5%;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "cuadro1" "cuadro2" "cuadro3" "cuadro4";
+      margin: 5% 0 0 2%; }
+      #grillaClientes #grillaClientesM .cambio1 {
+        grid-area: cuadro1;
+        height: 110%; }
+      #grillaClientes #grillaClientesM .cambio2 {
+        grid-area: cuadro2;
+        height: 110%; }
+      #grillaClientes #grillaClientesM .cambio3 {
+        grid-area: cuadro3;
+        height: 110%; }
+      #grillaClientes #grillaClientesM .cambio4 {
+        grid-area: cuadro4;
+        height: 100%; }
+  #grillaNosotros {
+    height: 50em;
+    display: grid;
+    row-gap: 5%;
+    column-gap: 5%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 1fr 1fr 10%;
+    grid-template-areas: "header" "main" "main" "footer";
+    text-align: center;
+    align-items: center; }
+    #grillaNosotros .navbar {
+      grid-area: header; }
+    #grillaNosotros footer {
+      grid-area: footer; }
+    #grillaNosotros #grillaMainN {
+      display: grid;
+      grid-area: main;
+      row-gap: 5%;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "foto" "texto" "subInformacion";
+      margin-top: 0; }
+      #grillaNosotros #grillaMainN .quienesSomos {
+        background-color: rgba(245, 245, 220, 0.432);
+        grid-area: texto;
+        height: 140%;
+        width: 90%;
+        font-size: 3vw;
         position: relative;
-        top: 50%; }
-      #grillaMainF .formulario1 input {
-        height: 2em; } }
+        bottom: 90%;
+        left: 5%; }
+        #grillaNosotros #grillaMainN .quienesSomos p {
+          margin: 2%;
+          position: relative;
+          bottom: 40%;
+          text-align: justify; }
+      #grillaNosotros #grillaMainN .fondoNosotros {
+        grid-area: foto; }
+      #grillaNosotros #grillaMainN .subInformacion {
+        background-color: #584edd;
+        height: 40%;
+        grid-area: subInformacion;
+        position: relative;
+        bottom: 100%;
+        left: 25%; }
+        #grillaNosotros #grillaMainN .subInformacion h2 {
+          font-size: 5vw; }
+        #grillaNosotros #grillaMainN .subInformacion p {
+          font-size: 2vw;
+          text-align: left;
+          text-align: justify; } }
