@@ -259,7 +259,7 @@ video {
   #grillaEntrenamiento {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 1fr 1fr 50%;
+    grid-template-rows: 10% 1fr 1fr 10%;
     grid-template-areas: "header header" "main main" "main main" "footer footer"; }
     #grillaEntrenamiento .navbar {
       grid-area: header; }
@@ -306,7 +306,7 @@ video {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 50% 50%;
       grid-template-areas: "cambio1 cambio2" "cambio3 cambio4";
-      margin: 10%;
+      margin: 0 10% 10% 10%;
       justify-items: center;
       align-items: center;
       text-align: center; }
@@ -384,7 +384,7 @@ video {
   #grillaIndex {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 1fr 1fr 1fr 20%;
+    grid-template-rows: 10% 1fr 1fr 1fr 10%;
     grid-template-areas: "header"  "main" "main" "main" "main" "main" "footer"; }
     #grillaIndex .navbar {
       grid-area: header; }
@@ -421,7 +421,7 @@ video {
   #grillaFormulario {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 1fr 1fr 5%;
+    grid-template-rows: 10% 1fr 1fr 10%;
     grid-template-areas: "header" "main" "main" "footer"; }
     #grillaFormulario footer {
       grid-area: footer; }
@@ -486,7 +486,7 @@ video {
   #grillaClientes {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr 1fr 10%;
     grid-template-areas: "header" "main" "main" "main" "main" "footer"; }
     #grillaClientes .navbar {
       grid-area: header; }

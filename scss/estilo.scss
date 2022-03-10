@@ -513,7 +513,7 @@ video{
     #grillaEntrenamiento{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows:50% 1fr 1fr 50% ;
+        grid-template-rows:10% 1fr 1fr 10% ;
         grid-template-areas: "header header"
                              "main main"
                              "main main"
@@ -622,7 +622,7 @@ video{
             grid-template-rows: 50% 50%;
             grid-template-areas: "cambio1 cambio2"
                                  "cambio3 cambio4";
-            margin: 10%;
+            margin: 0 10% 10% 10%;
             @include posicionamiento-items;
 
 
@@ -745,7 +745,7 @@ video{
     #grillaIndex{
         display:grid;
         grid-template-columns: 100%;
-        grid-template-rows:  10% 1fr 1fr 1fr 20%;
+        grid-template-rows:  10% 1fr 1fr 1fr 10%;
         grid-template-areas:"header" 
                             "main"
                             "main"
@@ -817,7 +817,7 @@ video{
     #grillaFormulario{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 1fr 1fr 5%;
+        grid-template-rows: 10% 1fr 1fr 10%;
         grid-template-areas:"header"
                             "main"
                             "main"
@@ -936,7 +936,7 @@ video{
     #grillaClientes{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr 1fr 10%;
         grid-template-areas:"header"
                             "main"
                             "main"
