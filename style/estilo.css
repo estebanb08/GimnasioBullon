@@ -1,9 +1,58 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   color: black; }
 
+.subMenus, .subMenu1, .subMenu2, .subMenu3 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-size: cover;
+  border-radius: 8px;
+  font-family: "Belgrano", serif;
+  transition: all 0.2s; }
+  .subMenus:hover, .subMenu1:hover, .subMenu2:hover, .subMenu3:hover {
+    transform: scale(0.97, 0.97); }
+  .subMenus a, .subMenu1 a, .subMenu2 a, .subMenu3 a {
+    text-decoration: none; }
+    .subMenus a p, .subMenu1 a p, .subMenu2 a p, .subMenu3 a p {
+      background-color: rgba(187, 185, 185, 0.486);
+      color: #000000;
+      position: relative;
+      top: 50%;
+      font-size: 1.3vw; }
+
+.entrenamientos, #grillaMainE .e1, #grillaMainE .e2, #grillaMainE .e3, #grillaMainE .e4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .entrenamientos h2, #grillaMainE .e1 h2, #grillaMainE .e2 h2, #grillaMainE .e3 h2, #grillaMainE .e4 h2 {
+    font-family: "Belgrano", serif; }
+
+.cajaCambios, .cambio1, .cambio2, .cambio3, .cambio4 {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #161069;
+  height: 80%;
+  width: 90%;
+  text-align: justify; }
+  .cajaCambios img, .cambio1 img, .cambio2 img, .cambio3 img, .cambio4 img {
+    margin-top: 15%;
+    width: 80%; }
+  .cajaCambios h3, .cambio1 h3, .cambio2 h3, .cambio3 h3, .cambio4 h3 {
+    font-family: "Belgrano", serif;
+    font-size: 4vw;
+    margin-bottom: 5%; }
+    .cajaCambios h3 p, .cambio1 h3 p, .cambio2 h3 p, .cambio3 h3 p, .cambio4 h3 p {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 1.3vw; }
+
 html body {
+  width: auto;
   height: 100%; }
 
 body {
@@ -11,20 +60,24 @@ body {
   height: 100%; }
   body .navbar {
     width: 100%;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    align-items: flex-start; }
     body .navbar img {
-      width: 10%; }
+      width: 10%;
+      text-align: left; }
+    body .navbar ul {
+      width: 50%; }
   body footer {
     margin-top: 5%;
-    font-size: 1.5vw;
-    height: 100%;
     width: 100%;
+    height: 100%;
     background-color: #19235e;
     text-align: center; }
     body footer ul {
       padding-top: 5%; }
     body footer li {
-      font-size: 1.3vw;
+      font-family: "Belgrano", serif;
+      font-size: 2vw;
       list-style: none;
       justify-content: center; }
     body footer .contactos {
@@ -39,71 +92,20 @@ video {
 
 .parrafo {
   font-size: 2vw;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lexend Deca", sans-serif; }
   .parrafo a {
     color: #d07e26; }
     .parrafo a:hover {
       color: orange; }
 
 .subMenu1 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-image: url(../imagenes/gimnasio.jpg);
-  background-size: cover;
-  border-radius: 8px;
-  transition: all 0.2s; }
-  .subMenu1:hover {
-    transform: scale(0.97, 0.97); }
-  .subMenu1 a {
-    text-decoration: none; }
-    .subMenu1 a p {
-      background-color: rgba(187, 185, 185, 0.486);
-      color: #000000;
-      font-family: "Lato", sans-serif;
-      position: relative;
-      top: 50%;
-      font-size: 1.3vw; }
+  background-image: url(../imagenes/gimnasio.jpg); }
 
 .subMenu2 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-image: url(../imagenes/entrenamiento.jpg);
-  background-size: cover;
-  border-radius: 8px;
-  transition: all 0.2s; }
-  .subMenu2:hover {
-    transform: scale(0.97, 0.97); }
-  .subMenu2 a {
-    text-decoration: none; }
-    .subMenu2 a p {
-      background-color: rgba(187, 185, 185, 0.486);
-      color: #000000;
-      font-family: "Lato", sans-serif;
-      position: relative;
-      top: 50%;
-      font-size: 1.3vw; }
+  background-image: url(../imagenes/entrenamiento.jpg); }
 
 .subMenu3 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-image: url(../imagenes/nosotros.png);
-  background-size: cover;
-  border-radius: 8px;
-  transition: all 0.2s; }
-  .subMenu3:hover {
-    transform: scale(0.97, 0.97); }
-  .subMenu3 a {
-    text-decoration: none; }
-    .subMenu3 a p {
-      background-color: rgba(187, 185, 185, 0.486);
-      color: #000000;
-      font-family: "Lato", sans-serif;
-      position: relative;
-      top: 50%;
-      font-size: 1.3vw; }
+  background-image: url(../imagenes/nosotros.png); }
 
 .formulario {
   display: inline-block;
@@ -122,29 +124,10 @@ video {
     width: 70%; }
 
 #grillaMainE h2 {
+  font-family: "Belgrano", serif;
   width: 50%;
   font-size: 2vw;
   text-align: center; }
-
-#grillaMainE .e1 {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-#grillaMainE .e2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-#grillaMainE .e3 {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-#grillaMainE .e4 {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
 
 .formulario1 {
   border-radius: 20px;
@@ -152,8 +135,8 @@ video {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 70%;
-  width: 60%; }
+  width: 60%;
+  height: 70%; }
   .formulario1 .texto {
     position: relative;
     left: 40%;
@@ -165,10 +148,11 @@ video {
     margin-top: 5%;
     font-size: 2vw;
     color: #190c36;
-    font-family: "Lato", sans-serif; }
+    font-family: "Belgrano", serif; }
     .formulario1 h2:hover {
       color: #8541dd; }
   .formulario1 input {
+    font-family: "Lexend Deca", sans-serif;
     border-radius: 10px;
     height: 5%;
     margin: 5%;
@@ -178,104 +162,38 @@ video {
     background-color: #8541dd;
     border-radius: 15px;
     border: solid black 2px;
-    height: 250%;
     width: 40%;
+    height: 250%;
     transition: all .3s; }
     .formulario1 input[type="button"]:hover {
       transform: scale(1.05, 1.05);
       color: white; }
 
-.cambio1 {
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  background-color: #161069;
-  height: 80%;
-  width: 90%; }
-  .cambio1 img {
-    margin-top: 15%;
-    width: 80%; }
-  .cambio1 h3 {
-    font-size: 2vw;
-    margin-bottom: 5%; }
-    .cambio1 h3 p {
-      font-size: 1.3vw; }
-
-.cambio2 {
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  background-color: #161069;
-  height: 80%;
-  width: 90%; }
-  .cambio2 img {
-    margin-top: 15%;
-    width: 80%; }
-  .cambio2 h3 {
-    font-size: 2vw;
-    margin-bottom: 5%; }
-    .cambio2 h3 p {
-      font-size: 1.3vw; }
-
-.cambio3 {
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  background-color: #161069;
-  height: 80%;
-  width: 90%; }
-  .cambio3 img {
-    margin-top: 15%;
-    width: 80%; }
-  .cambio3 h3 {
-    font-size: 2vw;
-    margin-bottom: 5%; }
-    .cambio3 h3 p {
-      font-size: 1.3vw; }
-
-.cambio4 {
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  background-color: #161069;
-  height: 80%;
-  width: 90%; }
-  .cambio4 img {
-    margin-top: 15%;
-    width: 80%; }
-  .cambio4 h3 {
-    font-size: 2vw;
-    margin-bottom: 5%; }
-    .cambio4 h3 p {
-      font-size: 1.3vw; }
-
 .quienesSomos {
   font-size: 1.2vw;
   background-color: #3a50cc; }
   .quienesSomos h1 {
+    font-family: "Belgrano", serif;
     height: 50%; }
+  .quienesSomos p {
+    font-family: "Lexend Deca", sans-serif; }
 
 .subInformacion {
-  height: 50%;
   width: 50%;
+  height: 50%;
   font-size: 1.5vw; }
+  .subInformacion h2 {
+    font-family: "Belgrano", serif; }
+  .subInformacion p {
+    text-align: justify;
+    font-family: "Lexend Deca", sans-serif; }
 
 @media only screen and (min-width: 600px) {
   #grillaIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 1fr 1fr 1fr 20%;
-    grid-template-areas: "header header header"  "main main main" "main main main" "main main main" "footer footer footer";
-    justify-items: center;
-    align-items: center; }
+    grid-template-areas: "header header header" "main main main" "main main main" "main main main" "footer footer footer"; }
     #grillaIndex .navbar {
       grid-area: header; }
     #grillaIndex footer {
@@ -290,14 +208,16 @@ video {
       grid-template-areas: "video video texto"  "video video texto" "cuadro1 cuadro2 cuadro3";
       justify-items: center;
       align-items: center;
-      position: relative;
-      right: .1%; }
+      text-align: center;
+      position: relative; }
       #grillaIndex #grillaMain video {
         grid-area: video; }
       #grillaIndex #grillaMain .parrafo {
         grid-area: texto;
         position: relative;
-        right: 10%; }
+        width: 90%;
+        right: 10%;
+        text-align: justify; }
       #grillaIndex #grillaMain .subMenu1 {
         grid-area: cuadro1; }
       #grillaIndex #grillaMain .subMenu2 {
@@ -309,9 +229,8 @@ video {
     width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 40% 40% 10%;
-    grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer";
-    align-items: center; }
+    grid-template-rows: 10% 1fr 1fr 10%;
+    grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
     #grillaFormulario .navbar {
       padding-top: 1%;
       grid-area: header; }
@@ -323,6 +242,7 @@ video {
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 50% 50%;
       grid-template-areas: "texto texto form form" "texto texto form form";
+      justify-items: center;
       align-items: center;
       text-align: center; }
       #grillaFormulario #grillaMainF .texto {
@@ -340,9 +260,7 @@ video {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 1fr 1fr 50%;
-    grid-template-areas: "header header" "main main" "main main" "footer footer";
-    justify-items: center;
-    align-items: center; }
+    grid-template-areas: "header header" "main main" "main main" "footer footer"; }
     #grillaEntrenamiento .navbar {
       grid-area: header; }
     #grillaEntrenamiento footer {
@@ -361,35 +279,22 @@ video {
       justify-items: center;
       align-items: center;
       text-align: center; }
+      #grillaEntrenamiento #grillaMainE .tamañoIFrame, #grillaEntrenamiento #grillaMainE .e1 iframe, #grillaEntrenamiento #grillaMainE .e2 iframe, #grillaEntrenamiento #grillaMainE .e3 iframe, #grillaEntrenamiento #grillaMainE .e4 iframe {
+        height: 20em;
+        width: 90%; }
       #grillaEntrenamiento #grillaMainE .e1 {
         grid-area: rutina1; }
-        #grillaEntrenamiento #grillaMainE .e1 iframe {
-          height: 20em;
-          width: 90%; }
       #grillaEntrenamiento #grillaMainE .e2 {
         grid-area: rutina2; }
-        #grillaEntrenamiento #grillaMainE .e2 iframe {
-          height: 20em;
-          width: 90%; }
       #grillaEntrenamiento #grillaMainE .e3 {
         grid-area: rutina3; }
-        #grillaEntrenamiento #grillaMainE .e3 iframe {
-          height: 20em;
-          width: 90%; }
       #grillaEntrenamiento #grillaMainE .e4 {
         grid-area: rutina4; }
-        #grillaEntrenamiento #grillaMainE .e4 iframe {
-          height: 20em;
-          width: 90%; }
   #grillaClientes {
     display: grid;
-    row-gap: 3%;
-    column-gap: 3%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 40% 40% 10%;
-    grid-template-areas: "header header" "main main" "main main" "footer footer";
-    justify-items: center;
-    align-items: center; }
+    grid-template-areas: "header header" "main main" "main main" "footer footer"; }
     #grillaClientes .navbar {
       grid-area: header; }
     #grillaClientes footer {
@@ -397,12 +302,14 @@ video {
     #grillaClientes #grillaClientesM {
       grid-area: main;
       display: grid;
-      row-gap: 1%;
       column-gap: 10%;
-      grid-template-columns: 45% 45%;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 50% 50%;
       grid-template-areas: "cambio1 cambio2" "cambio3 cambio4";
-      margin: 10%; }
+      margin: 10%;
+      justify-items: center;
+      align-items: center;
+      text-align: center; }
       #grillaClientes #grillaClientesM .cambio1 {
         grid-area: cambio1;
         transition: all .1s; }
@@ -429,9 +336,7 @@ video {
     column-gap: 5%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 1fr 1fr 10%;
-    grid-template-areas: "header header" "main main" "main main" "footer footer";
-    align-items: center;
-    text-align: center; }
+    grid-template-areas: "header header" "main main" "main main" "footer footer"; }
     #grillaNosotrosN .navbar {
       grid-area: header; }
     #grillaNosotrosN footer {
@@ -444,8 +349,9 @@ video {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 50% 50%;
       grid-template-areas: "foto Parrafo" "cuadro cuadro";
-      text-align: center;
-      align-items: center; }
+      justify-items: center;
+      align-items: center;
+      text-align: center; }
       #grillaNosotrosN #grillaMainN .fondoNosotros {
         width: 100%;
         grid-area: foto; }
@@ -479,9 +385,7 @@ video {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 1fr 1fr 1fr 20%;
-    grid-template-areas: "header"  "main" "main" "main" "main" "main" "footer";
-    justify-items: center;
-    align-items: center; }
+    grid-template-areas: "header"  "main" "main" "main" "main" "main" "footer"; }
     #grillaIndex .navbar {
       grid-area: header; }
     #grillaIndex footer {
@@ -493,30 +397,23 @@ video {
       grid-template-rows: 1fr 10% 1fr 1fr 1fr;
       grid-template-areas: "video" "parrafo" "cuadro1" "cuadro2" "cuadro3";
       justify-items: center;
-      justify-self: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
       #grillaIndex #grillaMain video {
         grid-area: video;
         width: 80%;
         height: 80%; }
+      #grillaIndex #grillaMain .subMenuMobile, #grillaIndex #grillaMain .subMenu1, #grillaIndex #grillaMain .subMenu2, #grillaIndex #grillaMain .subMenu3 {
+        width: 100%;
+        height: 80%; }
+        #grillaIndex #grillaMain .subMenuMobile p, #grillaIndex #grillaMain .subMenu1 p, #grillaIndex #grillaMain .subMenu2 p, #grillaIndex #grillaMain .subMenu3 p {
+          font-size: 4vw; }
       #grillaIndex #grillaMain .subMenu1 {
-        grid-area: cuadro1;
-        width: 100%;
-        height: 80%; }
-        #grillaIndex #grillaMain .subMenu1 p {
-          font-size: 4vw; }
+        grid-area: cuadro1; }
       #grillaIndex #grillaMain .subMenu2 {
-        grid-area: cuadro2;
-        width: 100%;
-        height: 80%; }
-        #grillaIndex #grillaMain .subMenu2 p {
-          font-size: 4vw; }
+        grid-area: cuadro2; }
       #grillaIndex #grillaMain .subMenu3 {
-        grid-area: cuadro3;
-        width: 100%;
-        height: 80%; }
-        #grillaIndex #grillaMain .subMenu3 p {
-          font-size: 4vw; }
+        grid-area: cuadro3; }
       #grillaIndex #grillaMain .parrafo {
         grid-area: parrafo;
         font-size: 3vw;
@@ -525,9 +422,7 @@ video {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 1fr 1fr 5%;
-    grid-template-areas: "header" "main" "main" "footer";
-    justify-items: center;
-    align-items: center; }
+    grid-template-areas: "header" "main" "main" "footer"; }
     #grillaFormulario footer {
       grid-area: footer; }
     #grillaFormulario .navbar {
@@ -540,7 +435,6 @@ video {
       grid-template-rows: 20% 80%;
       grid-template-areas: "texto" "formulario";
       justify-items: center;
-      justify-self: center;
       align-items: center;
       text-align: center; }
       #grillaFormulario #grillaMainF .texto {
@@ -562,10 +456,7 @@ video {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 1fr 1fr 1fr 1fr 10%;
-    grid-template-areas: "header" "main" "main" "main" "main" "footer";
-    justify-items: center;
-    justify-self: center;
-    align-items: center; }
+    grid-template-areas: "header" "main" "main" "main" "main" "footer"; }
     #grillaEntrenamiento .navbar {
       grid-area: header; }
     #grillaEntrenamiento footer {
@@ -578,6 +469,7 @@ video {
       grid-template-areas: "entrenamiento1" "entrenamiento2" "entrenamiento3" "entrenamiento4";
       justify-items: center;
       align-items: center;
+      text-align: center;
       margin: 0 2% 0 2%; }
       #grillaEntrenamiento #grillaMainE .e1 {
         grid-area: entrenamiento1;
@@ -601,13 +493,16 @@ video {
     #grillaClientes footer {
       grid-area: footer; }
     #grillaClientes #grillaClientesM {
-      height: 235em;
+      height: 245em;
       grid-area: main;
       display: grid;
       row-gap: 5%;
       grid-template-columns: 100%;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas: "cuadro1" "cuadro2" "cuadro3" "cuadro4";
+      justify-items: center;
+      align-items: center;
+      text-align: center;
       margin: 5% 0 0 2%; }
       #grillaClientes #grillaClientesM .cambio1 {
         grid-area: cuadro1;
@@ -622,15 +517,13 @@ video {
         grid-area: cuadro4;
         height: 100%; }
   #grillaNosotros {
-    height: 50em;
+    height: 75em;
     display: grid;
     row-gap: 5%;
     column-gap: 5%;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 1fr 1fr 10%;
-    grid-template-areas: "header" "main" "main" "footer";
-    text-align: center;
-    align-items: center; }
+    grid-template-rows: 10% 1fr 1fr 1fr 10%;
+    grid-template-areas: "header" "main" "main" "main" "footer"; }
     #grillaNosotros .navbar {
       grid-area: header; }
     #grillaNosotros footer {
@@ -640,35 +533,42 @@ video {
       grid-area: main;
       row-gap: 5%;
       grid-template-columns: 100%;
-      grid-template-rows: 50% 50%;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "foto" "texto" "subInformacion";
-      margin-top: 0; }
+      justify-items: center;
+      align-items: center;
+      text-align: center; }
       #grillaNosotros #grillaMainN .quienesSomos {
         background-color: rgba(245, 245, 220, 0.432);
+        border-radius: 8px;
+        padding: 5%;
         grid-area: texto;
-        height: 140%;
         width: 90%;
-        font-size: 3vw;
-        position: relative;
-        bottom: 90%;
-        left: 5%; }
+        height: 100%;
+        font-size: 1.5vw;
+        position: relative; }
         #grillaNosotros #grillaMainN .quienesSomos p {
-          margin: 2%;
+          font-size: 3vw;
           position: relative;
           bottom: 40%;
           text-align: justify; }
       #grillaNosotros #grillaMainN .fondoNosotros {
         grid-area: foto; }
+        #grillaNosotros #grillaMainN .fondoNosotros img {
+          width: 100%; }
       #grillaNosotros #grillaMainN .subInformacion {
-        background-color: #584edd;
-        height: 40%;
+        width: 90%;
+        height: 35%;
         grid-area: subInformacion;
         position: relative;
-        bottom: 100%;
-        left: 25%; }
+        bottom: 25%;
+        margin-bottom: 5%; }
         #grillaNosotros #grillaMainN .subInformacion h2 {
+          background-color: #4343da;
+          border-radius: 10px;
           font-size: 5vw; }
         #grillaNosotros #grillaMainN .subInformacion p {
-          font-size: 2vw;
-          text-align: left;
-          text-align: justify; } }
+          font-size: 3.5vw;
+          justify-items: center;
+          align-items: center;
+          text-align: center; } }
