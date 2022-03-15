@@ -330,46 +330,44 @@ video {
         transition: all .1s; }
         #grillaClientes #grillaClientesM .cambio4:hover {
           transform: scale(1.05, 1.05); }
-  #grillaNosotrosN {
+  #grillaNosotros {
     display: grid;
-    row-gap: 5%;
-    column-gap: 5%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 1fr 1fr 10%;
+    grid-template-rows: 10% 40% 40% 10%;
     grid-template-areas: "header header" "main main" "main main" "footer footer"; }
-    #grillaNosotrosN .navbar {
+    #grillaNosotros .navbar {
       grid-area: header; }
-    #grillaNosotrosN footer {
+    #grillaNosotros footer {
       grid-area: footer; }
-    #grillaNosotrosN #grillaMainN {
-      margin-left: 2%;
+    #grillaNosotros #grillaMainN {
+      margin-top: 5%;
       grid-area: main;
       display: grid;
-      row-gap: 5%;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
       grid-template-rows: 50% 50%;
       grid-template-areas: "foto Parrafo" "cuadro cuadro";
       justify-items: center;
       align-items: center;
       text-align: center; }
-      #grillaNosotrosN #grillaMainN .fondoNosotros {
-        width: 100%;
+      #grillaNosotros #grillaMainN .fondoNosotros {
         grid-area: foto; }
-      #grillaNosotrosN #grillaMainN .quienesSomos {
-        padding: 2%;
+      #grillaNosotros #grillaMainN .quienesSomos {
+        background-color: linear-gradient(to right, #3a3a94, #6161d1);
+        border-radius: 16px;
+        padding: 15px;
         width: 90%;
         height: 95%;
         grid-area: Parrafo;
         text-align: justify; }
-        #grillaNosotrosN #grillaMainN .quienesSomos h1 {
+        #grillaNosotros #grillaMainN .quienesSomos h1 {
           margin-bottom: 3%; }
-        #grillaNosotrosN #grillaMainN .quienesSomos p {
+        #grillaNosotros #grillaMainN .quienesSomos p {
           position: relative;
           bottom: 40%; }
-      #grillaNosotrosN #grillaMainN .subInformacion {
+      #grillaNosotros #grillaMainN .subInformacion {
         grid-area: cuadro;
         position: relative;
-        left: 25%;
+        top: 20%;
         text-align: justify; } }
 
 @media only screen and (max-width: 600px) {
@@ -379,8 +377,13 @@ video {
     right: 8%; }
     .formulario svg {
       width: 180%; }
-  footer {
-    font-size: 1.8vw; }
+  footer ul {
+    width: 200%;
+    height: 30%;
+    position: relative;
+    right: 90%; }
+    footer ul li {
+      font-size: 3vw; }
   #grillaIndex {
     display: grid;
     grid-template-columns: 100%;
@@ -493,7 +496,7 @@ video {
     #grillaClientes footer {
       grid-area: footer; }
     #grillaClientes #grillaClientesM {
-      height: 245em;
+      height: 280em;
       grid-area: main;
       display: grid;
       row-gap: 5%;
@@ -503,7 +506,7 @@ video {
       justify-items: center;
       align-items: center;
       text-align: center;
-      margin: 5% 0 0 2%; }
+      margin: 10% 0 0 2%; }
       #grillaClientes #grillaClientesM .cambio1 {
         grid-area: cuadro1;
         height: 110%; }
@@ -517,7 +520,6 @@ video {
         grid-area: cuadro4;
         height: 100%; }
   #grillaNosotros {
-    height: 75em;
     display: grid;
     row-gap: 5%;
     column-gap: 5%;
@@ -529,6 +531,7 @@ video {
     #grillaNosotros footer {
       grid-area: footer; }
     #grillaNosotros #grillaMainN {
+      height: 50em;
       display: grid;
       grid-area: main;
       row-gap: 5%;

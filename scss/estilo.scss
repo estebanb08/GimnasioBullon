@@ -655,12 +655,10 @@ video{
 
 
 
-    #grillaNosotrosN{
+    #grillaNosotros{
         display: grid;
-        row-gap: 5%;
-        column-gap: 5%;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 1fr 1fr 10% ;
+        grid-template-rows: 10% 40% 40% 10% ;
         grid-template-areas: "header header"
                              "main main"
                              "main main"
@@ -677,11 +675,10 @@ video{
 
 
         #grillaMainN{
-            margin-left: 2% ;
+            margin-top: 5%;
             grid-area: main;
             display: grid;
-            row-gap: 5%;
-            grid-template-columns:1fr 1fr ;
+            grid-template-columns:50% 50% ;
             grid-template-rows:50% 50%;
             grid-template-areas: "foto Parrafo"
                                 "cuadro cuadro";
@@ -689,12 +686,13 @@ video{
 
 
             .fondoNosotros{
-                width: 100%;
                 grid-area: foto;
             }
         
             .quienesSomos{
-                padding: 2%;
+                background-color: linear-gradient(to right, rgb(58, 58, 148) ,rgb(97, 97, 209));
+                border-radius: 16px;
+                padding: 15px;
                 @include tamaños(90%, 95%);
                 grid-area: Parrafo;
                 text-align: justify;
@@ -713,7 +711,7 @@ video{
             .subInformacion{
                 grid-area: cuadro;
                 position: relative;
-                left: 25%;
+                top: 20%;
                 text-align: justify;
             }
              
@@ -736,7 +734,17 @@ video{
     }
 
     footer{
-        font-size: 1.8vw;
+        
+        ul{
+            width: 200%;
+            height: 30%;
+            position: relative;
+            right: 90%;
+
+            li{
+                font-size: 3vw;
+            }
+        }
     }
 
 
@@ -955,7 +963,7 @@ video{
 
 
         #grillaClientesM{
-            height: 245em;
+            height: 280em;
             grid-area: main;
             display: grid;
             row-gap: 5%;
@@ -966,7 +974,7 @@ video{
                                 "cuadro3"
                                 "cuadro4";
             @include posicionamiento-items;
-            margin: 5% 0 0 2%;
+            margin: 10% 0 0 2%;
 
             .cambio1{
                 grid-area: cuadro1;
@@ -993,7 +1001,6 @@ video{
    
    
         #grillaNosotros{
-            height: 75em;
             display: grid;
             row-gap: 5%;
             column-gap: 5%;
@@ -1019,6 +1026,7 @@ video{
     
     
         #grillaMainN{
+            height: 50em;
             display: grid;
             grid-area: main;
             row-gap: 5%;
